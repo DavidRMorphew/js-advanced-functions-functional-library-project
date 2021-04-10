@@ -2,18 +2,18 @@
   "stats": {
     "suites": 16,
     "tests": 34,
-    "passes": 10,
+    "passes": 15,
     "pending": 0,
-    "failures": 24,
-    "start": "2021-04-10T18:58:27.153Z",
-    "end": "2021-04-10T18:58:27.711Z",
-    "duration": 558
+    "failures": 19,
+    "start": "2021-04-10T20:01:13.094Z",
+    "end": "2021-04-10T20:01:13.715Z",
+    "duration": 621
   },
   "tests": [
     {
       "title": "calls alert with each element passed",
       "fullTitle": "index.js each calls alert with each element passed",
-      "duration": 1,
+      "duration": 2,
       "currentRetry": 0,
       "err": {}
     },
@@ -62,26 +62,16 @@
     {
       "title": "returns the correct reduced value when passed an initial value",
       "fullTitle": "index.js reduce returns the correct reduced value when passed an initial value",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "message": "expected undefined to equal 40",
-        "showDiff": true,
-        "expected": 40,
-        "stack": "AssertionError: expected undefined to equal 40\n    at Context.<anonymous> (test/indexTest.js:69:32)\n    at processImmediate (internal/timers.js:458:21)"
-      }
+      "err": {}
     },
     {
       "title": "returns the correct reduced value when not passed an initial value",
       "fullTitle": "index.js reduce returns the correct reduced value when not passed an initial value",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
-      "err": {
-        "message": "expected undefined to equal 28",
-        "showDiff": true,
-        "expected": 28,
-        "stack": "AssertionError: expected undefined to equal 28\n    at Context.<anonymous> (test/indexTest.js:74:32)\n    at processImmediate (internal/timers.js:458:21)"
-      }
+      "err": {}
     },
     {
       "title": "does not modify the original array",
@@ -95,30 +85,21 @@
       "fullTitle": "index.js find returns the value if found",
       "duration": 1,
       "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: fi.find is not a function\n    at Context.<anonymous> (test/indexTest.js:94:17)\n    at processImmediate (internal/timers.js:458:21)",
-        "message": "fi.find is not a function"
-      }
+      "err": {}
     },
     {
       "title": "does not traverse the whole array if the value is found early",
       "fullTitle": "index.js find does not traverse the whole array if the value is found early",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: fi.find is not a function\n    at Context.<anonymous> (test/indexTest.js:101:10)\n    at processImmediate (internal/timers.js:458:21)",
-        "message": "fi.find is not a function"
-      }
+      "err": {}
     },
     {
       "title": "returns undefined if the value is not present",
       "fullTitle": "index.js find returns undefined if the value is not present",
       "duration": 1,
       "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: fi.find is not a function\n    at Context.<anonymous> (test/indexTest.js:106:17)\n    at processImmediate (internal/timers.js:458:21)",
-        "message": "fi.find is not a function"
-      }
+      "err": {}
     },
     {
       "title": "correctly filters for values that the callback evaluates as true",
@@ -133,7 +114,7 @@
     {
       "title": "correctly returns the size of the collection when an array is passed",
       "fullTitle": "index.js size correctly returns the size of the collection when an array is passed",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
         "stack": "TypeError: fi.size is not a function\n    at Context.<anonymous> (test/indexTest.js:131:17)\n    at processImmediate (internal/timers.js:458:21)",
@@ -173,7 +154,7 @@
     {
       "title": "returns the last element of the collection",
       "fullTitle": "index.js last returns the last element of the collection",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "stack": "TypeError: fi.last is not a function\n    at Context.<anonymous> (test/indexTest.js:155:17)\n    at processImmediate (internal/timers.js:458:21)",
@@ -183,7 +164,7 @@
     {
       "title": "returns the last n elements of the collection when the second optional argument (n) is provided",
       "fullTitle": "index.js last returns the last n elements of the collection when the second optional argument (n) is provided",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
         "stack": "TypeError: fi.last is not a function\n    at Context.<anonymous> (test/indexTest.js:159:29)\n    at processImmediate (internal/timers.js:458:21)",
@@ -253,7 +234,7 @@
     {
       "title": "correctly flattens a single level when a second argument of \"true\" is passed",
       "fullTitle": "index.js flatten correctly flattens a single level when a second argument of \"true\" is passed",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "stack": "TypeError: fi.flatten is not a function\n    at Context.<anonymous> (test/indexTest.js:227:26)\n    at processImmediate (internal/timers.js:458:21)",
@@ -273,7 +254,7 @@
     {
       "title": "removes duplicate values from an array when an iteratee is applied",
       "fullTitle": "index.js uniq removes duplicate values from an array when an iteratee is applied",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "stack": "TypeError: fi.uniq is not a function\n    at Context.<anonymous> (test/indexTest.js:244:25)\n    at processImmediate (internal/timers.js:458:21)",
@@ -300,7 +281,7 @@
     {
       "title": "retrieves all the values of the object's own properties",
       "fullTitle": "index.js values retrieves all the values of the object's own properties",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
         "stack": "TypeError: fi.values is not a function\n    at Context.<anonymous> (test/indexTest.js:268:29)\n    at processImmediate (internal/timers.js:458:21)",
@@ -328,60 +309,6 @@
   "pending": [],
   "failures": [
     {
-      "title": "returns the correct reduced value when passed an initial value",
-      "fullTitle": "index.js reduce returns the correct reduced value when passed an initial value",
-      "duration": 1,
-      "currentRetry": 0,
-      "err": {
-        "message": "expected undefined to equal 40",
-        "showDiff": true,
-        "expected": 40,
-        "stack": "AssertionError: expected undefined to equal 40\n    at Context.<anonymous> (test/indexTest.js:69:32)\n    at processImmediate (internal/timers.js:458:21)"
-      }
-    },
-    {
-      "title": "returns the correct reduced value when not passed an initial value",
-      "fullTitle": "index.js reduce returns the correct reduced value when not passed an initial value",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "message": "expected undefined to equal 28",
-        "showDiff": true,
-        "expected": 28,
-        "stack": "AssertionError: expected undefined to equal 28\n    at Context.<anonymous> (test/indexTest.js:74:32)\n    at processImmediate (internal/timers.js:458:21)"
-      }
-    },
-    {
-      "title": "returns the value if found",
-      "fullTitle": "index.js find returns the value if found",
-      "duration": 1,
-      "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: fi.find is not a function\n    at Context.<anonymous> (test/indexTest.js:94:17)\n    at processImmediate (internal/timers.js:458:21)",
-        "message": "fi.find is not a function"
-      }
-    },
-    {
-      "title": "does not traverse the whole array if the value is found early",
-      "fullTitle": "index.js find does not traverse the whole array if the value is found early",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: fi.find is not a function\n    at Context.<anonymous> (test/indexTest.js:101:10)\n    at processImmediate (internal/timers.js:458:21)",
-        "message": "fi.find is not a function"
-      }
-    },
-    {
-      "title": "returns undefined if the value is not present",
-      "fullTitle": "index.js find returns undefined if the value is not present",
-      "duration": 1,
-      "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: fi.find is not a function\n    at Context.<anonymous> (test/indexTest.js:106:17)\n    at processImmediate (internal/timers.js:458:21)",
-        "message": "fi.find is not a function"
-      }
-    },
-    {
       "title": "correctly filters for values that the callback evaluates as true",
       "fullTitle": "index.js filter correctly filters for values that the callback evaluates as true",
       "duration": 0,
@@ -394,7 +321,7 @@
     {
       "title": "correctly returns the size of the collection when an array is passed",
       "fullTitle": "index.js size correctly returns the size of the collection when an array is passed",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
         "stack": "TypeError: fi.size is not a function\n    at Context.<anonymous> (test/indexTest.js:131:17)\n    at processImmediate (internal/timers.js:458:21)",
@@ -434,7 +361,7 @@
     {
       "title": "returns the last element of the collection",
       "fullTitle": "index.js last returns the last element of the collection",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "stack": "TypeError: fi.last is not a function\n    at Context.<anonymous> (test/indexTest.js:155:17)\n    at processImmediate (internal/timers.js:458:21)",
@@ -444,7 +371,7 @@
     {
       "title": "returns the last n elements of the collection when the second optional argument (n) is provided",
       "fullTitle": "index.js last returns the last n elements of the collection when the second optional argument (n) is provided",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
         "stack": "TypeError: fi.last is not a function\n    at Context.<anonymous> (test/indexTest.js:159:29)\n    at processImmediate (internal/timers.js:458:21)",
@@ -514,7 +441,7 @@
     {
       "title": "correctly flattens a single level when a second argument of \"true\" is passed",
       "fullTitle": "index.js flatten correctly flattens a single level when a second argument of \"true\" is passed",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "stack": "TypeError: fi.flatten is not a function\n    at Context.<anonymous> (test/indexTest.js:227:26)\n    at processImmediate (internal/timers.js:458:21)",
@@ -534,7 +461,7 @@
     {
       "title": "removes duplicate values from an array when an iteratee is applied",
       "fullTitle": "index.js uniq removes duplicate values from an array when an iteratee is applied",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "stack": "TypeError: fi.uniq is not a function\n    at Context.<anonymous> (test/indexTest.js:244:25)\n    at processImmediate (internal/timers.js:458:21)",
@@ -554,7 +481,7 @@
     {
       "title": "retrieves all the values of the object's own properties",
       "fullTitle": "index.js values retrieves all the values of the object's own properties",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
         "stack": "TypeError: fi.values is not a function\n    at Context.<anonymous> (test/indexTest.js:268:29)\n    at processImmediate (internal/timers.js:458:21)",
@@ -576,7 +503,7 @@
     {
       "title": "calls alert with each element passed",
       "fullTitle": "index.js each calls alert with each element passed",
-      "duration": 1,
+      "duration": 2,
       "currentRetry": 0,
       "err": {}
     },
@@ -623,9 +550,44 @@
       "err": {}
     },
     {
+      "title": "returns the correct reduced value when passed an initial value",
+      "fullTitle": "index.js reduce returns the correct reduced value when passed an initial value",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns the correct reduced value when not passed an initial value",
+      "fullTitle": "index.js reduce returns the correct reduced value when not passed an initial value",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
       "title": "does not modify the original array",
       "fullTitle": "index.js reduce does not modify the original array",
       "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns the value if found",
+      "fullTitle": "index.js find returns the value if found",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "does not traverse the whole array if the value is found early",
+      "fullTitle": "index.js find does not traverse the whole array if the value is found early",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns undefined if the value is not present",
+      "fullTitle": "index.js find returns undefined if the value is not present",
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },

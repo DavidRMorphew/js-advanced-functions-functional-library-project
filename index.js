@@ -31,9 +31,24 @@ const fi = (function() {
       return newArray;
     },
 
-    reduce: function() {
+    reduce: function(collection, callBackFunction, initialValue = 0) {
+      let total = (!!initialValue) ? initialValue : collection[0];
+      let i = (!!initialValue) ? 0 : 1;
 
+      for (; i < collection.length; i++){
+        total = callBackFunction(total, collection[i], collection)
+      }
+      return total;
     },
+
+    find: function(collection, predicateFunction){
+      for (let i = 0; i < collection.length; i++){
+        if (!!predicateFunction(collection[i])){
+          return collection[i]
+        }
+      }
+    },
+
 
     functions: function() {
 
