@@ -107,6 +107,14 @@ const fi = (function() {
       return compactedArray;
     },
 
+    sortBy: (array, callBackFunction) => {
+      const sortedArray = []
+      array.forEach(element => {
+        sortedArray.push(callBackFunction(element)) 
+      })
+      return sortedArray.sort((a, b) => a - b)
+    },
+
     functions: function() {
 
     },
