@@ -2,12 +2,12 @@
   "stats": {
     "suites": 16,
     "tests": 34,
-    "passes": 18,
+    "passes": 24,
     "pending": 0,
-    "failures": 16,
-    "start": "2021-04-10T20:11:03.268Z",
-    "end": "2021-04-10T20:11:03.878Z",
-    "duration": 610
+    "failures": 10,
+    "start": "2021-04-10T22:57:44.196Z",
+    "end": "2021-04-10T22:57:44.726Z",
+    "duration": 530
   },
   "tests": [
     {
@@ -27,7 +27,7 @@
     {
       "title": "returns the original collection",
       "fullTitle": "index.js each returns the original collection",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -76,21 +76,21 @@
     {
       "title": "does not modify the original array",
       "fullTitle": "index.js reduce does not modify the original array",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "returns the value if found",
       "fullTitle": "index.js find returns the value if found",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "does not traverse the whole array if the value is found early",
       "fullTitle": "index.js find does not traverse the whole array if the value is found early",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -104,7 +104,7 @@
     {
       "title": "correctly filters for values that the callback evaluates as true",
       "fullTitle": "index.js filter correctly filters for values that the callback evaluates as true",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -127,65 +127,47 @@
       "fullTitle": "index.js first returns the first element of the collection",
       "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: fi.first is not a function\n    at Context.<anonymous> (test/indexTest.js:143:17)\n    at processImmediate (internal/timers.js:458:21)",
-        "message": "fi.first is not a function"
-      }
+      "err": {}
     },
     {
       "title": "returns the first n elements of the collection when the second optional argument (n) is provided",
       "fullTitle": "index.js first returns the first n elements of the collection when the second optional argument (n) is provided",
       "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: fi.first is not a function\n    at Context.<anonymous> (test/indexTest.js:147:29)\n    at processImmediate (internal/timers.js:458:21)",
-        "message": "fi.first is not a function"
-      }
+      "err": {}
     },
     {
       "title": "returns the last element of the collection",
       "fullTitle": "index.js last returns the last element of the collection",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: fi.last is not a function\n    at Context.<anonymous> (test/indexTest.js:155:17)\n    at processImmediate (internal/timers.js:458:21)",
-        "message": "fi.last is not a function"
-      }
+      "err": {}
     },
     {
       "title": "returns the last n elements of the collection when the second optional argument (n) is provided",
       "fullTitle": "index.js last returns the last n elements of the collection when the second optional argument (n) is provided",
       "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: fi.last is not a function\n    at Context.<anonymous> (test/indexTest.js:159:29)\n    at processImmediate (internal/timers.js:458:21)",
-        "message": "fi.last is not a function"
-      }
+      "err": {}
     },
     {
       "title": "returns a copy of the **array** with all falsy values removed. In JavaScript, _false_, _null_, _0_, _\"\"_, _undefined_ and _NaN_ are all falsy.",
       "fullTitle": "index.js compact returns a copy of the **array** with all falsy values removed. In JavaScript, _false_, _null_, _0_, _\"\"_, _undefined_ and _NaN_ are all falsy.",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: fi.compact is not a function\n    at Context.<anonymous> (test/indexTest.js:168:29)\n    at processImmediate (internal/timers.js:458:21)",
-        "message": "fi.compact is not a function"
-      }
+      "err": {}
     },
     {
       "title": "does not modify the original array",
       "fullTitle": "index.js compact does not modify the original array",
       "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: fi.compact is not a function\n    at Context.<anonymous> (test/indexTest.js:172:10)\n    at processImmediate (internal/timers.js:458:21)",
-        "message": "fi.compact is not a function"
-      }
+      "err": {}
     },
     {
       "title": "correctly sorts arrays of integers and arrays of strings",
       "fullTitle": "index.js sortBy correctly sorts arrays of integers and arrays of strings",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
         "stack": "TypeError: fi.sortBy is not a function\n    at Context.<anonymous> (test/indexTest.js:200:29)\n    at processImmediate (internal/timers.js:458:21)",
@@ -205,7 +187,7 @@
     {
       "title": "correctly sorts arrays of integers with non-standard sort",
       "fullTitle": "index.js sortBy correctly sorts arrays of integers with non-standard sort",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "stack": "TypeError: fi.sortBy is not a function\n    at Context.<anonymous> (test/indexTest.js:212:29)\n    at processImmediate (internal/timers.js:458:21)",
@@ -300,69 +282,9 @@
   "pending": [],
   "failures": [
     {
-      "title": "returns the first element of the collection",
-      "fullTitle": "index.js first returns the first element of the collection",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: fi.first is not a function\n    at Context.<anonymous> (test/indexTest.js:143:17)\n    at processImmediate (internal/timers.js:458:21)",
-        "message": "fi.first is not a function"
-      }
-    },
-    {
-      "title": "returns the first n elements of the collection when the second optional argument (n) is provided",
-      "fullTitle": "index.js first returns the first n elements of the collection when the second optional argument (n) is provided",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: fi.first is not a function\n    at Context.<anonymous> (test/indexTest.js:147:29)\n    at processImmediate (internal/timers.js:458:21)",
-        "message": "fi.first is not a function"
-      }
-    },
-    {
-      "title": "returns the last element of the collection",
-      "fullTitle": "index.js last returns the last element of the collection",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: fi.last is not a function\n    at Context.<anonymous> (test/indexTest.js:155:17)\n    at processImmediate (internal/timers.js:458:21)",
-        "message": "fi.last is not a function"
-      }
-    },
-    {
-      "title": "returns the last n elements of the collection when the second optional argument (n) is provided",
-      "fullTitle": "index.js last returns the last n elements of the collection when the second optional argument (n) is provided",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: fi.last is not a function\n    at Context.<anonymous> (test/indexTest.js:159:29)\n    at processImmediate (internal/timers.js:458:21)",
-        "message": "fi.last is not a function"
-      }
-    },
-    {
-      "title": "returns a copy of the **array** with all falsy values removed. In JavaScript, _false_, _null_, _0_, _\"\"_, _undefined_ and _NaN_ are all falsy.",
-      "fullTitle": "index.js compact returns a copy of the **array** with all falsy values removed. In JavaScript, _false_, _null_, _0_, _\"\"_, _undefined_ and _NaN_ are all falsy.",
-      "duration": 1,
-      "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: fi.compact is not a function\n    at Context.<anonymous> (test/indexTest.js:168:29)\n    at processImmediate (internal/timers.js:458:21)",
-        "message": "fi.compact is not a function"
-      }
-    },
-    {
-      "title": "does not modify the original array",
-      "fullTitle": "index.js compact does not modify the original array",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: fi.compact is not a function\n    at Context.<anonymous> (test/indexTest.js:172:10)\n    at processImmediate (internal/timers.js:458:21)",
-        "message": "fi.compact is not a function"
-      }
-    },
-    {
       "title": "correctly sorts arrays of integers and arrays of strings",
       "fullTitle": "index.js sortBy correctly sorts arrays of integers and arrays of strings",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
         "stack": "TypeError: fi.sortBy is not a function\n    at Context.<anonymous> (test/indexTest.js:200:29)\n    at processImmediate (internal/timers.js:458:21)",
@@ -382,7 +304,7 @@
     {
       "title": "correctly sorts arrays of integers with non-standard sort",
       "fullTitle": "index.js sortBy correctly sorts arrays of integers with non-standard sort",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "stack": "TypeError: fi.sortBy is not a function\n    at Context.<anonymous> (test/indexTest.js:212:29)\n    at processImmediate (internal/timers.js:458:21)",
@@ -478,7 +400,7 @@
     {
       "title": "returns the original collection",
       "fullTitle": "index.js each returns the original collection",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -527,21 +449,21 @@
     {
       "title": "does not modify the original array",
       "fullTitle": "index.js reduce does not modify the original array",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "returns the value if found",
       "fullTitle": "index.js find returns the value if found",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "does not traverse the whole array if the value is found early",
       "fullTitle": "index.js find does not traverse the whole array if the value is found early",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -555,7 +477,7 @@
     {
       "title": "correctly filters for values that the callback evaluates as true",
       "fullTitle": "index.js filter correctly filters for values that the callback evaluates as true",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -569,6 +491,48 @@
     {
       "title": "correctly returns the size of the collection (amount of keys) when an object is passed",
       "fullTitle": "index.js size correctly returns the size of the collection (amount of keys) when an object is passed",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns the first element of the collection",
+      "fullTitle": "index.js first returns the first element of the collection",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns the first n elements of the collection when the second optional argument (n) is provided",
+      "fullTitle": "index.js first returns the first n elements of the collection when the second optional argument (n) is provided",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns the last element of the collection",
+      "fullTitle": "index.js last returns the last element of the collection",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns the last n elements of the collection when the second optional argument (n) is provided",
+      "fullTitle": "index.js last returns the last n elements of the collection when the second optional argument (n) is provided",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns a copy of the **array** with all falsy values removed. In JavaScript, _false_, _null_, _0_, _\"\"_, _undefined_ and _NaN_ are all falsy.",
+      "fullTitle": "index.js compact returns a copy of the **array** with all falsy values removed. In JavaScript, _false_, _null_, _0_, _\"\"_, _undefined_ and _NaN_ are all falsy.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "does not modify the original array",
+      "fullTitle": "index.js compact does not modify the original array",
       "duration": 0,
       "currentRetry": 0,
       "err": {}

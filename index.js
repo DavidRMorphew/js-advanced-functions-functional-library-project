@@ -61,6 +61,52 @@ const fi = (function() {
       const size = (!!collection.length) ? collection.length : Object.values(collection).length;
       return size;
     },
+
+    // first: (collection, n = 1) => {
+    //   if (n === 1){
+    //     return collection[0];
+    //   } else {
+    //     const newCollection = [];
+    //     for (let i = 0; i < n; i++){
+    //       newCollection.push(collection[i]);
+    //     }
+    //     return newCollection;
+    //   };
+    // },
+    first: (array, n = 1) => { return (n === 1) ? array[0] : array.slice(0, n)},
+
+    // last: (array, n) => {
+    //   const reversedArray = [...array].reverse()
+    //   if (!n){
+    //     return reversedArray[0];
+    //   } else {
+    //     const newArray = [];
+    //     for (let i = 0; i < n; i++){
+    //       newArray.push(reversedArray[i]);
+    //     }
+    //     return [...newArray].reverse();
+    //   };
+    // },
+
+    last: (array, n = 1) => {
+        const index = -(n);
+        if (index !== -1){
+          return array.slice(index);
+        } else {
+          return [...array].reverse()[0];
+        }
+    },
+
+    compact: (array) => {
+      const compactedArray = [];
+      for (const element of array){
+        if (!!element){
+          compactedArray.push(element);
+        }
+      }
+      return compactedArray;
+    },
+
     functions: function() {
 
     },
