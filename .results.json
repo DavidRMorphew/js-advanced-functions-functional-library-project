@@ -2,18 +2,18 @@
   "stats": {
     "suites": 16,
     "tests": 34,
-    "passes": 15,
+    "passes": 18,
     "pending": 0,
-    "failures": 19,
-    "start": "2021-04-10T20:01:13.094Z",
-    "end": "2021-04-10T20:01:13.715Z",
-    "duration": 621
+    "failures": 16,
+    "start": "2021-04-10T20:11:03.268Z",
+    "end": "2021-04-10T20:11:03.878Z",
+    "duration": 610
   },
   "tests": [
     {
       "title": "calls alert with each element passed",
       "fullTitle": "index.js each calls alert with each element passed",
-      "duration": 2,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -90,46 +90,37 @@
     {
       "title": "does not traverse the whole array if the value is found early",
       "fullTitle": "index.js find does not traverse the whole array if the value is found early",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "returns undefined if the value is not present",
       "fullTitle": "index.js find returns undefined if the value is not present",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "correctly filters for values that the callback evaluates as true",
       "fullTitle": "index.js filter correctly filters for values that the callback evaluates as true",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: fi.filter is not a function\n    at Context.<anonymous> (test/indexTest.js:121:32)\n    at processImmediate (internal/timers.js:458:21)",
-        "message": "fi.filter is not a function"
-      }
+      "err": {}
     },
     {
       "title": "correctly returns the size of the collection when an array is passed",
       "fullTitle": "index.js size correctly returns the size of the collection when an array is passed",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: fi.size is not a function\n    at Context.<anonymous> (test/indexTest.js:131:17)\n    at processImmediate (internal/timers.js:458:21)",
-        "message": "fi.size is not a function"
-      }
+      "err": {}
     },
     {
       "title": "correctly returns the size of the collection (amount of keys) when an object is passed",
       "fullTitle": "index.js size correctly returns the size of the collection (amount of keys) when an object is passed",
       "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: fi.size is not a function\n    at Context.<anonymous> (test/indexTest.js:135:17)\n    at processImmediate (internal/timers.js:458:21)",
-        "message": "fi.size is not a function"
-      }
+      "err": {}
     },
     {
       "title": "returns the first element of the collection",
@@ -144,7 +135,7 @@
     {
       "title": "returns the first n elements of the collection when the second optional argument (n) is provided",
       "fullTitle": "index.js first returns the first n elements of the collection when the second optional argument (n) is provided",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "stack": "TypeError: fi.first is not a function\n    at Context.<anonymous> (test/indexTest.js:147:29)\n    at processImmediate (internal/timers.js:458:21)",
@@ -164,7 +155,7 @@
     {
       "title": "returns the last n elements of the collection when the second optional argument (n) is provided",
       "fullTitle": "index.js last returns the last n elements of the collection when the second optional argument (n) is provided",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "stack": "TypeError: fi.last is not a function\n    at Context.<anonymous> (test/indexTest.js:159:29)\n    at processImmediate (internal/timers.js:458:21)",
@@ -214,7 +205,7 @@
     {
       "title": "correctly sorts arrays of integers with non-standard sort",
       "fullTitle": "index.js sortBy correctly sorts arrays of integers with non-standard sort",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
         "stack": "TypeError: fi.sortBy is not a function\n    at Context.<anonymous> (test/indexTest.js:212:29)\n    at processImmediate (internal/timers.js:458:21)",
@@ -281,7 +272,7 @@
     {
       "title": "retrieves all the values of the object's own properties",
       "fullTitle": "index.js values retrieves all the values of the object's own properties",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "stack": "TypeError: fi.values is not a function\n    at Context.<anonymous> (test/indexTest.js:268:29)\n    at processImmediate (internal/timers.js:458:21)",
@@ -309,36 +300,6 @@
   "pending": [],
   "failures": [
     {
-      "title": "correctly filters for values that the callback evaluates as true",
-      "fullTitle": "index.js filter correctly filters for values that the callback evaluates as true",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: fi.filter is not a function\n    at Context.<anonymous> (test/indexTest.js:121:32)\n    at processImmediate (internal/timers.js:458:21)",
-        "message": "fi.filter is not a function"
-      }
-    },
-    {
-      "title": "correctly returns the size of the collection when an array is passed",
-      "fullTitle": "index.js size correctly returns the size of the collection when an array is passed",
-      "duration": 1,
-      "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: fi.size is not a function\n    at Context.<anonymous> (test/indexTest.js:131:17)\n    at processImmediate (internal/timers.js:458:21)",
-        "message": "fi.size is not a function"
-      }
-    },
-    {
-      "title": "correctly returns the size of the collection (amount of keys) when an object is passed",
-      "fullTitle": "index.js size correctly returns the size of the collection (amount of keys) when an object is passed",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: fi.size is not a function\n    at Context.<anonymous> (test/indexTest.js:135:17)\n    at processImmediate (internal/timers.js:458:21)",
-        "message": "fi.size is not a function"
-      }
-    },
-    {
       "title": "returns the first element of the collection",
       "fullTitle": "index.js first returns the first element of the collection",
       "duration": 0,
@@ -351,7 +312,7 @@
     {
       "title": "returns the first n elements of the collection when the second optional argument (n) is provided",
       "fullTitle": "index.js first returns the first n elements of the collection when the second optional argument (n) is provided",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "stack": "TypeError: fi.first is not a function\n    at Context.<anonymous> (test/indexTest.js:147:29)\n    at processImmediate (internal/timers.js:458:21)",
@@ -371,7 +332,7 @@
     {
       "title": "returns the last n elements of the collection when the second optional argument (n) is provided",
       "fullTitle": "index.js last returns the last n elements of the collection when the second optional argument (n) is provided",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "stack": "TypeError: fi.last is not a function\n    at Context.<anonymous> (test/indexTest.js:159:29)\n    at processImmediate (internal/timers.js:458:21)",
@@ -421,7 +382,7 @@
     {
       "title": "correctly sorts arrays of integers with non-standard sort",
       "fullTitle": "index.js sortBy correctly sorts arrays of integers with non-standard sort",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
         "stack": "TypeError: fi.sortBy is not a function\n    at Context.<anonymous> (test/indexTest.js:212:29)\n    at processImmediate (internal/timers.js:458:21)",
@@ -481,7 +442,7 @@
     {
       "title": "retrieves all the values of the object's own properties",
       "fullTitle": "index.js values retrieves all the values of the object's own properties",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "stack": "TypeError: fi.values is not a function\n    at Context.<anonymous> (test/indexTest.js:268:29)\n    at processImmediate (internal/timers.js:458:21)",
@@ -503,7 +464,7 @@
     {
       "title": "calls alert with each element passed",
       "fullTitle": "index.js each calls alert with each element passed",
-      "duration": 2,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -580,14 +541,35 @@
     {
       "title": "does not traverse the whole array if the value is found early",
       "fullTitle": "index.js find does not traverse the whole array if the value is found early",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "returns undefined if the value is not present",
       "fullTitle": "index.js find returns undefined if the value is not present",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "correctly filters for values that the callback evaluates as true",
+      "fullTitle": "index.js filter correctly filters for values that the callback evaluates as true",
       "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "correctly returns the size of the collection when an array is passed",
+      "fullTitle": "index.js size correctly returns the size of the collection when an array is passed",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "correctly returns the size of the collection (amount of keys) when an object is passed",
+      "fullTitle": "index.js size correctly returns the size of the collection (amount of keys) when an object is passed",
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },

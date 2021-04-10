@@ -49,7 +49,18 @@ const fi = (function() {
       }
     },
 
+    filter: (collection, predicateFunction)=>{
+      const returnArray = []
+      collection.forEach(element => {
+        if (!!predicateFunction(element)){ returnArray.push(element) }
+      })
+      return returnArray;
+    },
 
+    size: (collection) => {
+      const size = (!!collection.length) ? collection.length : Object.values(collection).length;
+      return size;
+    },
     functions: function() {
 
     },
