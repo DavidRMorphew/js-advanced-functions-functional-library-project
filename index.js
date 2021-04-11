@@ -107,24 +107,7 @@ const fi = (function() {
       return compactedArray;
     },
 
-    // sortBy: (array, callBackFunction) => {
-    //   const sortedArray = [...array]
-    //   const valueSortedArray = []
-    //   array.forEach(element => {
-    //     valueSortedArray.push(callBackFunction(element)) 
-    //   })
-    //   for (let i = 1; i < valueSortedArray.length; i++){
-    //     if (valueSortedArray[i] < valueSortedArray[i-1]){
-    //       [valueSortedArray[i], valueSortedArray[i-1]] = [valueSortedArray[i-1], valueSortedArray[i]];
-    //       [sortedArray[i], sortedArray[i-1]] = [sortedArray[i-1], sortedArray[i]];
-    //     }
-    //   }
-    //   return sortedArray;
-    // },
-
-    // functions: function() {
-
-    // },
+    
     sortBy: (array, callBackFunction) => {
       const sortedArray = [...array]
       const valueSortedArray = []
@@ -155,7 +138,7 @@ const fi = (function() {
     
       return sortedArray;
     },
-
+    uniq: () => {},
   }
 })()
 
