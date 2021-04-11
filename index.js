@@ -138,7 +138,26 @@ const fi = (function() {
     
       return sortedArray;
     },
-    uniq: () => {},
+    uniq: (array) => {
+      const newArray = [...array];
+      
+      const finalArray = []
+      const testPass = (array, givenElement) => {
+        let testPass = false
+        if ((array.filter(element => element === givenElement)).length === 0){
+          testPass = true
+        }
+        return testPass
+      }
+      for (let i = 0; i < newArray.length; i++){
+        if (testPass(finalArray, newArray[i])){
+          finalArray.push(newArray[i])
+        }
+      }
+      return finalArray
+      
+      
+    },
   }
 })()
 
