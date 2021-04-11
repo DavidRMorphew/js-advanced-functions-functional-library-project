@@ -107,20 +107,62 @@ const fi = (function() {
       return compactedArray;
     },
 
+    // sortBy: (array, callBackFunction) => {
+    //   const sortedArray = [...array]
+    //   const valueSortedArray = []
+    //   array.forEach(element => {
+    //     valueSortedArray.push(callBackFunction(element)) 
+    //   })
+    //   for (let i = 1; i < valueSortedArray.length; i++){
+    //     if (valueSortedArray[i] < valueSortedArray[i-1]){
+    //       [valueSortedArray[i], valueSortedArray[i-1]] = [valueSortedArray[i-1], valueSortedArray[i]];
+    //       [sortedArray[i], sortedArray[i-1]] = [sortedArray[i-1], sortedArray[i]];
+    //     }
+    //   }
+    //   return sortedArray;
+    // },
+
+    // functions: function() {
+
+    // },
     sortBy: (array, callBackFunction) => {
-      const sortedArray = []
+      const sortedArray = [...array]
+      const valueSortedArray = []
       array.forEach(element => {
-        sortedArray.push(callBackFunction(element)) 
+        valueSortedArray.push(callBackFunction(element)) 
       })
-      return sortedArray.sort((a, b) => a - b)
+      const sortFail = (ary) => {
+        let sortFail = false
+        for (let i = 0; i < (ary.length - 1); i++){
+            if (!!(ary[i + 1] < ary[i])){
+              sortFail = true
+            }
+        }
+        return sortFail
+      }
+      const sorterFunction = () => {
+        for (let i = 1; i < valueSortedArray.length; i++){
+          if (valueSortedArray[i] < valueSortedArray[i-1]){
+            [valueSortedArray[i], valueSortedArray[i-1]] = [valueSortedArray[i-1], valueSortedArray[i]];
+            [sortedArray[i], sortedArray[i-1]] = [sortedArray[i-1], sortedArray[i]];
+            }
+          }  
+      }
+    
+      while (!!sortFail(valueSortedArray)){
+        sorterFunction();
+      }
+    
+      return sortedArray;
     },
-
-    functions: function() {
-
-    },
-
 
   }
 })()
 
 fi.libraryMethod()
+
+
+
+
+
+const ary = [9, 3,100,4,78,2]
