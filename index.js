@@ -138,8 +138,31 @@ const fi = (function() {
     
       return sortedArray;
     },
-    flatten: (array) => {
-      
+    flatten: (array, shallow) => {
+      const finalArray = []
+      const reductionArray = [...array]
+      const algorithm1 = (ary) => {
+        for (const element of ary){
+            if ((ary.length !== 0) && (typeof element !== "object")){
+              const passingElement = ary.shift();
+              finalArray.push(passingElement);
+              algorithm1(ary);
+            } else if (ary.length !== 0) {
+              const firstObj = ary.shift()
+              for (let i = 0; i < firstObj.length; i++){
+                ary.splice(i, 0, firstObj[i])
+              }
+              algorithm1(ary);
+            }
+          }
+          return finalArray
+        }
+      const plainFlatten = (ary) => {
+        return algorithm1(ary)
+      }
+      if (!shallow) {
+        return plainFlatten(reductionArray)
+      }
     },
     uniq: (array, isSorted, callBackFunction) => {
       const firstArray = [...array];
