@@ -221,8 +221,16 @@ const fi = (function() {
         newArray.push(obj[property]);
       }
       return newArray;
-    },,
-    functions: () => {},
+    },
+    functions: (obj) => {
+      const ary = []
+      for (const property in obj){
+        if (typeof obj[property] === "function"){
+          ary.push(property)
+        }
+      }
+      return ary
+    },
   }
 })()
 
