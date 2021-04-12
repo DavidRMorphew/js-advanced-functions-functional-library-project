@@ -221,7 +221,8 @@ const fi = (function() {
         newArray.push(obj[property]);
       }
       return newArray;
-    },
+    },,
+    functions: () => {},
   }
 })()
 
