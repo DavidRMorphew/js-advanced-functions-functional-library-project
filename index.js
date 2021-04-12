@@ -156,14 +156,30 @@ const fi = (function() {
             }
           }
           return finalArray
+      }
+      const flattenOneLevel = (ary) => {
+        for (const element of ary){
+          if (typeof element !== "object"){
+            finalArray.push(element);
+          } else {
+            const firstObj = element
+              for (const e of firstObj){
+                finalArray.push(e)
+              }
+          }
         }
+        return finalArray;
+      }
       const plainFlatten = (ary) => {
         return algorithm1(ary)
       }
       if (!shallow) {
         return plainFlatten(reductionArray)
+      } else {
+        return flattenOneLevel(reductionArray)
       }
     },
+
     uniq: (array, isSorted, callBackFunction) => {
       const firstArray = [...array];
       let newArray
