@@ -138,9 +138,20 @@ const fi = (function() {
     
       return sortedArray;
     },
-    uniq: (array) => {
-      const newArray = [...array];
+    flatten: (array) => {
       
+    },
+    uniq: (array, isSorted, callBackFunction) => {
+      const firstArray = [...array];
+      let newArray
+      if (!!callBackFunction){
+        newArray = firstArray.map(el => callBackFunction(el));
+        console.log("newArray with iteratee"+newArray)
+      } else {
+        newArray = [...firstArray];
+      };
+      
+      const penultimateArray = []
       const finalArray = []
       const testPass = (array, givenElement) => {
         let testPass = false
@@ -150,21 +161,29 @@ const fi = (function() {
         return testPass
       }
       for (let i = 0; i < newArray.length; i++){
-        if (testPass(finalArray, newArray[i])){
-          finalArray.push(newArray[i])
+        if (testPass(penultimateArray, newArray[i])){
+          penultimateArray.push(newArray[i]);
+          finalArray.push(firstArray[i]);
         }
       }
       return finalArray
-      
-      
+    },
+    keys: (object) => {
+      const keysArray = [];
+      for (const property in object){
+        keysArray.push(property);
+      }
+      return keysArray;
+    },
+
+    values: (obj) => {
+      const newArray = [];
+      for (const property in obj){
+        newArray.push(obj[property]);
+      }
+      return newArray;
     },
   }
 })()
 
 fi.libraryMethod()
-
-
-
-
-
-const ary = [9, 3,100,4,78,2]
